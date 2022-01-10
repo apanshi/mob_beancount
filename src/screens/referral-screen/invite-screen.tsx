@@ -9,13 +9,13 @@ import {
 } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { composeAsync } from "expo-mail-composer";
-import { NavigationBar } from "@/common/navigation-bar";
 import { isAvailableAsync, sendSMSAsync } from "expo-sms";
 import { Button, Toast, SearchBar } from "@ant-design/react-native";
+import { groupBy } from "lodash";
+import { NavigationBar } from "@/common/navigation-bar";
 import { contentPadding } from "@/common/screen-util";
 import { useTheme } from "@/common/theme";
 import { CommonMargin } from "@/common/common-margin";
-import { groupBy } from "lodash";
 import { useContacts } from "@/screens/referral-screen/hooks/use-contacts";
 import { ContactRow } from "@/screens/referral-screen/components/contact-row";
 import { i18n } from "@/translations";

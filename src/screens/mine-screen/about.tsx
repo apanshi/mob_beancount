@@ -12,6 +12,7 @@ import {
   AsyncStorage,
 } from "react-native";
 import { connect } from "react-redux";
+import { useIsFocused } from "@react-navigation/native";
 import { analytics } from "@/common/analytics";
 import { ListHeader } from "@/common/list-header";
 import { registerForPushNotificationAsync } from "@/common/register-push-token";
@@ -25,7 +26,6 @@ import { useUpdateReportSubscribeToRemote } from "@/screens/mine-screen/hooks/us
 import { useFeatureFlags } from "@/common/feature-flags/use-feature-flags";
 import { AccountHeader } from "@/screens/mine-screen/account-header";
 import { InviteSection } from "@/screens/referral-screen/components/invite-section";
-import { useIsFocused } from "@react-navigation/native";
 import { ReportStatus } from "../../../__generated__/globalTypes";
 
 const { Item } = List;

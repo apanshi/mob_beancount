@@ -7,6 +7,8 @@ import {
   Text,
   View,
 } from "react-native";
+import { useState } from "react";
+import { connect } from "react-redux";
 import { useTheme } from "@/common/theme";
 import { i18n } from "@/translations";
 import { useLedgerMeta } from "@/screens/add-transaction-screen/hooks/use-ledger-meta";
@@ -14,8 +16,6 @@ import { useHomeCharts } from "@/screens/home-screen/hooks/use-home-charts";
 import { useAccountHierarchy } from "@/screens/home-screen/hooks/use-account-hierarchy";
 import { HeaderText, SmallHeaderText } from "@/common/text-styled";
 import { BarChartStyled } from "@/common/bar-chart-styled";
-import { useState } from "react";
-import { connect } from "react-redux";
 import {
   contentPadding,
   ScreenWidth,
